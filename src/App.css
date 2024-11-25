@@ -1,0 +1,171 @@
+body {
+  background: linear-gradient(48deg, #91ead3, #c2d4ee, #dac2ee);
+  background-size: 600% 600%;
+
+  -webkit-animation: backgroundAnimation 24s ease infinite;
+  -moz-animation: backgroundAnimation 24s ease infinite;
+  animation: backgroundAnimation 24s ease infinite;
+}
+
+@-webkit-keyframes backgroundAnimation {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+@-moz-keyframes backgroundAnimation {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+@keyframes backgroundAnimation {
+  0%{background-position:91% 0%}
+  50%{background-position:10% 100%}
+  100%{background-position:91% 0%}
+}
+
+#searchForm {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.contentWraper {
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex block;   
+  flex-flow: column;
+  margin-top: 60px;
+}
+
+.contentWraper h1 {
+  width: 100%;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.contentWraper #searchForm {
+  margin: 0 auto 40px;
+  display: flex;
+  height: 3vh;
+}
+
+#url {
+  border-radius: 20px ;
+  width: 26vw;
+  height: 4vh;
+  border: 2px solid #fff;
+  background-color: transparent;
+
+}
+
+.contentWraper form button {
+  border-radius: 0 20px 20px 0;
+  width: auto;
+  border:  2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.contentWraper #searchForm button:hover {
+  animation: AnimationTitle 5s ease infinite;
+  background: linear-gradient(to right, #e369c6, #e369c6, #70da72);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes AnimationTitle {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.contentWraper img {
+  width: 40vw;
+  height: auto;
+  margin: 0 auto 0px;
+}
+
+.contentWraper #registerForm {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto 0;
+}
+
+.contentWraper #registerForm #memo {
+  width: 60vw;
+  height: 10vh;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.contentWraper #registerForm button {
+  width: 20vw;
+  height: auto;
+  border-radius: 20px;
+  margin: 10px auto 60px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.contentWraper #registerForm button:hover {
+  animation: AnimationTitle 5s ease infinite;
+  background: linear-gradient(to right, #e369c6, #e369c6, #70da72);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contentWraper #registerForm p {
+  color: #fff;
+  font-weight: bold;
+}
+
+h2{
+  width: 100%;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.writtenMemo{
+  width: 60vw;
+  height: auto;
+  margin: 0 auto 20px;
+  
+}
+
+.writtenMemo li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.writtenMemo a{
+  background:#111;
+}
+
+.writtenMemo a img {
+  width: 38vw;
+  height: auto;
+}
+
+.writtenMemo a img:hover {
+  opacity:0.5;
+transition:0.3s;
+}
+
+.writtenMemo p {
+  width: 20vw;
+  height: auto;
+  margin-left: 2vw;
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  color:#333132;
+}
